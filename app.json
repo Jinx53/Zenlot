@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "zenlot",
+    "slug": "zenlot",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/zenlot-darkGradient.png",
+    "scheme": "zenlot",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "update": {
+      "fallbackToCacheTimeout": 0,
+      "enable": false
+    },
+    "assetsBundlePatterns": [
+      "**/*",
+      "assts/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zenlot.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/favicon/dark/zenlot_favicon_darkGradient_256x256.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.zenlot.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon/zenlot_favicon_transparent_64x64.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash/zenlot.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#001c34",
+          "dark": {
+            "image": "./assets/images/splash/zenlot-dark.png",
+            "backgroundColor": "#001c34"
+          }
+        }
+      ],
+      [
+        "expo-asset",
+        {
+          "name": "expo-asset",
+          "options": {
+            "assets": [
+              "./assets/images/zenlot-darkGradient.png",
+              "./assets/images/splash/zenlot.png",
+              "./assets/images/splash/zenlot-dark.png"
+            ]
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "55aa5876-7d36-4cc3-8ba5-4fda8ad3a5a2"
+      }
+    },
+    "owner": "otonye"
+  }
+}
